@@ -54,7 +54,7 @@ class Settings {
         double          getAreaProposalTuner(void) { return areaProposalTuner; }
         double          getRateProposalTuner(void) { return rateProposalTuner; }
         double          getDistanceProposalTuner(void) { return distanceProposalTuner; }
-        bool            getUseAuxillarySampling(void) { return useAuxillarySampling; }
+        bool            getUseAuxiliarySampling(void) { return useAuxiliarySampling; }
         bool            getGeoDistanceTruncate(void) { return geoDistanceTruncate; }
     
     private:
@@ -103,7 +103,7 @@ class Settings {
         double			pathLossRate;
         double          areaLossPrior;
         double          areaGainPrior;
-        bool            useAuxillarySampling;
+        bool            useAuxiliarySampling;
     
         bool            guessInitialRates;
         int             modelType;

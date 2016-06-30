@@ -21,7 +21,7 @@ Mcmc::Mcmc(Areas* a, GeoCoords* g, MbRandom* r, Model* m, Tree* t, Settings* s) 
     proposalProbs.push_back(20.0);	// pathHistory
     proposalProbs.push_back(1.0);	// areaRates
     // pathRates
-    if (settingsPtr->getUseAuxillarySampling())
+    if (settingsPtr->getUseAuxiliarySampling())
         proposalProbs.push_back(1.0);
     else
         proposalProbs.push_back(0.0);

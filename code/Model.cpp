@@ -1789,7 +1789,7 @@ void Model::updateAreaRate(int mcmcCycle, double tuning) {
     if (accept == true)
     {
         areaRates[m] = newRate;
-        if (!settingsPtr->getUseAuxillarySampling())
+        if (!settingsPtr->getUseAuxiliarySampling())
             pathRates[m] = newRate;
         lnLike = newLnL;
         result = "Accept new areaRates";
@@ -1797,7 +1797,7 @@ void Model::updateAreaRate(int mcmcCycle, double tuning) {
     else
     {
         areaRates[m] = oldRate;
-        if (!settingsPtr->getUseAuxillarySampling())
+        if (!settingsPtr->getUseAuxiliarySampling())
             pathRates[m] = oldRate;
         result = "Reject new areaRates";
     }

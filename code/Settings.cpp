@@ -49,7 +49,7 @@ Settings::Settings(int argc, char *argv[]) {
     areaProposalTuner = 0.2;
     rateProposalTuner = 0.5;
     distanceProposalTuner = 0.5;
-    useAuxillarySampling = false;
+    useAuxiliarySampling = false;
     geoDistancePowerPrior = 1.0;
     geoDistancePositive = false;
     geoDistanceTruncate = false;
@@ -217,8 +217,8 @@ void Settings::setArguments(int argc, char** argv)
             rateProposalTuner = Util::stringToDouble(argVal);
         else if (argName == "-distanceProposalTuner")
             distanceProposalTuner = Util::stringToDouble(argVal);
-        else if (argName == "-useAuxillarySampling")
-            useAuxillarySampling = Util::stringToBool(argVal);
+        else if (argName == "-useAuxiliarySampling")
+            useAuxiliarySampling = Util::stringToBool(argVal);
 
 		// MCMC SETTINGS
 		else if (argName == "-chainLength")
@@ -266,7 +266,7 @@ void Settings::print(void) {
     std::cout << "   * Area proposal tuning value     = " << areaProposalTuner << std::endl;
     std::cout << "   * Rate proposal tuning value     = " << rateProposalTuner << std::endl;
     std::cout << "   * Distance proposal tuning value = " << distanceProposalTuner << std::endl;
-    std::cout << "   * Use auxillary sampling         = " << useAuxillarySampling << std::endl;
+    std::cout << "   * Use auxiliary sampling         = " << useAuxiliarySampling << std::endl;
     std::cout << std::endl;
 
 }
@@ -299,7 +299,7 @@ void Settings::printUsage(void) {
     std::cout << "   -areaProposalTuner <NUMBER>        : Tunes avg prob of resampling history for an area (must be from 0 to 1)" << std::endl;
     std::cout << "   -rateProposalTuner <NUMBER>        : Tunes scaler proposal for gain/loss rates" << std::endl;
     std::cout << "   -distanceProposalTuner <NUMBER>    : Tunes scaler proposal for distance power" << std::endl;
-    std::cout << "   -useAuxillarySampling <BOOL>       : Use auxillary \"*\" path sampling, disabled by default (T=enable, F=disable)" << std::endl;
+    std::cout << "   -useAuxiliarySampling <BOOL>       : Use auxiliary \"*\" path sampling, disabled by default (T=enable, F=disable)" << std::endl;
     
 	std::cout << std::endl;
 	std::cout << "Example:" << std::endl;

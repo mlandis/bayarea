@@ -39,7 +39,7 @@ This program is no longer being actively supported. Almost all functionality has
 v1.0.3
 * Improved MCMC starting states for better chances of the chain reaching stationarity.
 * Add support for tuning proposal windows for rate and distance power parameter proposals, via `-rateProposalTuner` and `-distanceProposalTuner`.
-* Add support for using standard path sampling versus auxillary variable path sampling as defined in Landis et al. (2013), toggled with the `-useAuxillarySampling` flag. The standard path sampling algorithm is guaranteed to work, which roughly follows stochastic mapping algorithm proposed by Nielsen (2002), while the auxillary path sampling algorithm lacks a mathematical proof for convergence but appears to work in practice for datasets I've examined. Credit to Jan Irvahn and Vladimir Minin for identifying this issue.
+* Add support for using standard path sampling versus auxiliary variable path sampling as defined in Landis et al. (2013), toggled with the `-useAuxiliarySampling` flag. The standard path sampling algorithm is guaranteed to work, which roughly follows stochastic mapping algorithm proposed by Nielsen (2002), while the auxillary path sampling algorithm lacks a mathematical proof for convergence but appears to work in practice for datasets I've examined. Credit to Jan Irvahn and Vladimir Minin for identifying this issue.
 
 
 **March 13, 2014**

@@ -1,34 +1,34 @@
-#bayarea
+# bayarea
 #### Bayesian inference of historical biogeography for many discrete areas
 
 This is the software implementation of the method described in our recent Systematic Biology paper:
 
 Landis, M. J., Matzke, N. J., Moore, B. R., & Huelsenbeck, J. P. (2013). Bayesian analysis of biogeography when the number of areas is large. Systematic Biology, 62(6), 789-804. [[link]](http://sysbio.oxfordjournals.org/content/62/6/789)
 
-#####Quick guide
+##### Quick guide
 Download the most recent zip file. Unzip it. Enter the unzipped folder in the command line. Just type
 ```
 chmod +x bayarea my_run.sh ./my_run.sh
 ```
 to run a pre-loaded example analysis.
 
-#####Slow guide
+##### Slow guide
 If the included command-line program doesn't work for your computer, you will need to compile the source code to produce an executable. In general, this is an easy process -- just follow the instructions in the manual. If you have gcc installed, type
 ```
 g++ -O3 *.cpp -o bayarea
 ```
 from within the source code folder. If you're stumped, feel welcome to email mlandis (at) gmail (dot) com for help.
 
-#####Source code
+##### Source code
 
 BayArea is tested on Mac OS X 10.8 and compiled using gcc-4.2. C++ source code is available under Downloads (stable) and Source (unstable). An executable is provided with the source code, but you may have to compile it yourself.
 
-#####Contact
+##### Contact
 
 All feedback is appreciated -- share your thoughts, questions, and comments regarding the software and model by emailing mlandis (at) gmail (dot) com.
 
 ====
-##Updates
+## Updates
 
 **June 29, 2016**
 

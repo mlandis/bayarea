@@ -1,0 +1,5 @@
+examples/my_run.*.txt
+examples/my_run.*.nhx
+proj/*
+proj/bayarea/bayarea.xcodeproj/*
+proj/bayarea/bayarea.xcodeproj/xcuserdata/*

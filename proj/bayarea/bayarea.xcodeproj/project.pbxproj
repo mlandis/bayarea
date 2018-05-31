@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FA5D8C420C01F96009D55CA /* AreaChange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8A220C01F96009D55CA /* AreaChange.cpp */; };
+		4FA5D8C520C01F96009D55CA /* Areas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8A420C01F96009D55CA /* Areas.cpp */; };
+		4FA5D8C620C01F96009D55CA /* Atlas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8A620C01F96009D55CA /* Atlas.cpp */; };
+		4FA5D8C720C01F96009D55CA /* BranchHistory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8A920C01F96009D55CA /* BranchHistory.cpp */; };
+		4FA5D8C820C01F96009D55CA /* ConditionalLikelihood.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8AB20C01F96009D55CA /* ConditionalLikelihood.cpp */; };
+		4FA5D8C920C01F96009D55CA /* FileMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8AD20C01F96009D55CA /* FileMgr.cpp */; };
+		4FA5D8CA20C01F96009D55CA /* GeoCoords.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8AF20C01F96009D55CA /* GeoCoords.cpp */; };
+		4FA5D8CB20C01F96009D55CA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8B120C01F96009D55CA /* main.cpp */; };
+		4FA5D8CC20C01F96009D55CA /* MbRandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8B220C01F96009D55CA /* MbRandom.cpp */; };
+		4FA5D8CD20C01F96009D55CA /* Mcmc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8B420C01F96009D55CA /* Mcmc.cpp */; };
+		4FA5D8CE20C01F96009D55CA /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8B620C01F96009D55CA /* Model.cpp */; };
+		4FA5D8CF20C01F96009D55CA /* Msg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8B820C01F96009D55CA /* Msg.cpp */; };
+		4FA5D8D020C01F96009D55CA /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8BA20C01F96009D55CA /* Node.cpp */; };
+		4FA5D8D120C01F96009D55CA /* Settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8BC20C01F96009D55CA /* Settings.cpp */; };
+		4FA5D8D220C01F96009D55CA /* TransitionProbability.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8BE20C01F96009D55CA /* TransitionProbability.cpp */; };
+		4FA5D8D320C01F96009D55CA /* Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8C020C01F96009D55CA /* Tree.cpp */; };
+		4FA5D8D420C01F96009D55CA /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5D8C220C01F96009D55CA /* Util.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4FA5D89520C01F78009D55CA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4FA5D89720C01F78009D55CA /* bayarea */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bayarea; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA5D8A220C01F96009D55CA /* AreaChange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AreaChange.cpp; sourceTree = "<group>"; };
+		4FA5D8A320C01F96009D55CA /* AreaChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaChange.h; sourceTree = "<group>"; };
+		4FA5D8A420C01F96009D55CA /* Areas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Areas.cpp; sourceTree = "<group>"; };
+		4FA5D8A520C01F96009D55CA /* Areas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Areas.h; sourceTree = "<group>"; };
+		4FA5D8A620C01F96009D55CA /* Atlas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Atlas.cpp; sourceTree = "<group>"; };
+		4FA5D8A720C01F96009D55CA /* Atlas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atlas.h; sourceTree = "<group>"; };
+		4FA5D8A820C01F96009D55CA /* bayarea */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = bayarea; sourceTree = "<group>"; };
+		4FA5D8A920C01F96009D55CA /* BranchHistory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BranchHistory.cpp; sourceTree = "<group>"; };
+		4FA5D8AA20C01F96009D55CA /* BranchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchHistory.h; sourceTree = "<group>"; };
+		4FA5D8AB20C01F96009D55CA /* ConditionalLikelihood.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConditionalLikelihood.cpp; sourceTree = "<group>"; };
+		4FA5D8AC20C01F96009D55CA /* ConditionalLikelihood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConditionalLikelihood.h; sourceTree = "<group>"; };
+		4FA5D8AD20C01F96009D55CA /* FileMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileMgr.cpp; sourceTree = "<group>"; };
+		4FA5D8AE20C01F96009D55CA /* FileMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileMgr.h; sourceTree = "<group>"; };
+		4FA5D8AF20C01F96009D55CA /* GeoCoords.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeoCoords.cpp; sourceTree = "<group>"; };
+		4FA5D8B020C01F96009D55CA /* GeoCoords.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoCoords.h; sourceTree = "<group>"; };
+		4FA5D8B120C01F96009D55CA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4FA5D8B220C01F96009D55CA /* MbRandom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MbRandom.cpp; sourceTree = "<group>"; };
+		4FA5D8B320C01F96009D55CA /* MbRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MbRandom.h; sourceTree = "<group>"; };
+		4FA5D8B420C01F96009D55CA /* Mcmc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mcmc.cpp; sourceTree = "<group>"; };
+		4FA5D8B520C01F96009D55CA /* Mcmc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mcmc.h; sourceTree = "<group>"; };
+		4FA5D8B620C01F96009D55CA /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		4FA5D8B720C01F96009D55CA /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		4FA5D8B820C01F96009D55CA /* Msg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Msg.cpp; sourceTree = "<group>"; };
+		4FA5D8B920C01F96009D55CA /* Msg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Msg.h; sourceTree = "<group>"; };
+		4FA5D8BA20C01F96009D55CA /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		4FA5D8BB20C01F96009D55CA /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		4FA5D8BC20C01F96009D55CA /* Settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Settings.cpp; sourceTree = "<group>"; };
+		4FA5D8BD20C01F96009D55CA /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		4FA5D8BE20C01F96009D55CA /* TransitionProbability.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransitionProbability.cpp; sourceTree = "<group>"; };
+		4FA5D8BF20C01F96009D55CA /* TransitionProbability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionProbability.h; sourceTree = "<group>"; };
+		4FA5D8C020C01F96009D55CA /* Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tree.cpp; sourceTree = "<group>"; };
+		4FA5D8C120C01F96009D55CA /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
+		4FA5D8C220C01F96009D55CA /* Util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
+		4FA5D8C320C01F96009D55CA /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FA5D89420C01F78009D55CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FA5D88E20C01F78009D55CA = {
+			isa = PBXGroup;
+			children = (
+				4FA5D8A120C01F96009D55CA /* code */,
+				4FA5D89820C01F78009D55CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FA5D89820C01F78009D55CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FA5D89720C01F78009D55CA /* bayarea */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FA5D8A120C01F96009D55CA /* code */ = {
+			isa = PBXGroup;
+			children = (
+				4FA5D8A220C01F96009D55CA /* AreaChange.cpp */,
+				4FA5D8A320C01F96009D55CA /* AreaChange.h */,
+				4FA5D8A420C01F96009D55CA /* Areas.cpp */,
+				4FA5D8A520C01F96009D55CA /* Areas.h */,
+				4FA5D8A620C01F96009D55CA /* Atlas.cpp */,
+				4FA5D8A720C01F96009D55CA /* Atlas.h */,
+				4FA5D8A820C01F96009D55CA /* bayarea */,
+				4FA5D8A920C01F96009D55CA /* BranchHistory.cpp */,
+				4FA5D8AA20C01F96009D55CA /* BranchHistory.h */,
+				4FA5D8AB20C01F96009D55CA /* ConditionalLikelihood.cpp */,
+				4FA5D8AC20C01F96009D55CA /* ConditionalLikelihood.h */,
+				4FA5D8AD20C01F96009D55CA /* FileMgr.cpp */,
+				4FA5D8AE20C01F96009D55CA /* FileMgr.h */,
+				4FA5D8AF20C01F96009D55CA /* GeoCoords.cpp */,
+				4FA5D8B020C01F96009D55CA /* GeoCoords.h */,
+				4FA5D8B120C01F96009D55CA /* main.cpp */,
+				4FA5D8B220C01F96009D55CA /* MbRandom.cpp */,
+				4FA5D8B320C01F96009D55CA /* MbRandom.h */,
+				4FA5D8B420C01F96009D55CA /* Mcmc.cpp */,
+				4FA5D8B520C01F96009D55CA /* Mcmc.h */,
+				4FA5D8B620C01F96009D55CA /* Model.cpp */,
+				4FA5D8B720C01F96009D55CA /* Model.h */,
+				4FA5D8B820C01F96009D55CA /* Msg.cpp */,
+				4FA5D8B920C01F96009D55CA /* Msg.h */,
+				4FA5D8BA20C01F96009D55CA /* Node.cpp */,
+				4FA5D8BB20C01F96009D55CA /* Node.h */,
+				4FA5D8BC20C01F96009D55CA /* Settings.cpp */,
+				4FA5D8BD20C01F96009D55CA /* Settings.h */,
+				4FA5D8BE20C01F96009D55CA /* TransitionProbability.cpp */,
+				4FA5D8BF20C01F96009D55CA /* TransitionProbability.h */,
+				4FA5D8C020C01F96009D55CA /* Tree.cpp */,
+				4FA5D8C120C01F96009D55CA /* Tree.h */,
+				4FA5D8C220C01F96009D55CA /* Util.cpp */,
+				4FA5D8C320C01F96009D55CA /* Util.h */,
+			);
+			name = code;
+			path = ../../code;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FA5D89620C01F78009D55CA /* bayarea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FA5D89E20C01F78009D55CA /* Build configuration list for PBXNativeTarget "bayarea" */;
+			buildPhases = (
+				4FA5D89320C01F78009D55CA /* Sources */,
+				4FA5D89420C01F78009D55CA /* Frameworks */,
+				4FA5D89520C01F78009D55CA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bayarea;
+			productName = bayarea;
+			productReference = 4FA5D89720C01F78009D55CA /* bayarea */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FA5D88F20C01F78009D55CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Michael Landis";
+				TargetAttributes = {
+					4FA5D89620C01F78009D55CA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4FA5D89220C01F78009D55CA /* Build configuration list for PBXProject "bayarea" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4FA5D88E20C01F78009D55CA;
+			productRefGroup = 4FA5D89820C01F78009D55CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FA5D89620C01F78009D55CA /* bayarea */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FA5D89320C01F78009D55CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA5D8C920C01F96009D55CA /* FileMgr.cpp in Sources */,
+				4FA5D8CA20C01F96009D55CA /* GeoCoords.cpp in Sources */,
+				4FA5D8D420C01F96009D55CA /* Util.cpp in Sources */,
+				4FA5D8C520C01F96009D55CA /* Areas.cpp in Sources */,
+				4FA5D8CF20C01F96009D55CA /* Msg.cpp in Sources */,
+				4FA5D8D120C01F96009D55CA /* Settings.cpp in Sources */,
+				4FA5D8D220C01F96009D55CA /* TransitionProbability.cpp in Sources */,
+				4FA5D8C820C01F96009D55CA /* ConditionalLikelihood.cpp in Sources */,
+				4FA5D8C420C01F96009D55CA /* AreaChange.cpp in Sources */,
+				4FA5D8C720C01F96009D55CA /* BranchHistory.cpp in Sources */,
+				4FA5D8D320C01F96009D55CA /* Tree.cpp in Sources */,
+				4FA5D8CE20C01F96009D55CA /* Model.cpp in Sources */,
+				4FA5D8CB20C01F96009D55CA /* main.cpp in Sources */,
+				4FA5D8D020C01F96009D55CA /* Node.cpp in Sources */,
+				4FA5D8C620C01F96009D55CA /* Atlas.cpp in Sources */,
+				4FA5D8CC20C01F96009D55CA /* MbRandom.cpp in Sources */,
+				4FA5D8CD20C01F96009D55CA /* Mcmc.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4FA5D89C20C01F78009D55CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4FA5D89D20C01F78009D55CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4FA5D89F20C01F78009D55CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4FA5D8A020C01F78009D55CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FA5D89220C01F78009D55CA /* Build configuration list for PBXProject "bayarea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA5D89C20C01F78009D55CA /* Debug */,
+				4FA5D89D20C01F78009D55CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FA5D89E20C01F78009D55CA /* Build configuration list for PBXNativeTarget "bayarea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA5D89F20C01F78009D55CA /* Debug */,
+				4FA5D8A020C01F78009D55CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FA5D88F20C01F78009D55CA /* Project object */;
+}

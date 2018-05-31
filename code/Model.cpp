@@ -236,7 +236,9 @@ void Model::conditionalLikelhoodDown(std::set<int>& areaSet) {
         }
 }
 
-void Model::drawAncestralAreas(Node* p, std::set<int>& areaSet) {
+bool Model::drawAncestralAreas(Node* p, std::set<int>& areaSet) {
+    
+    int num_attempts = 1e2;
     
     // get the vector of descendants of node p
     std::vector<Node*> descendants = p->getDescendants();
@@ -326,9 +328,18 @@ void Model::drawAncestralAreas(Node* p, std::set<int>& areaSet) {
         s1 = p->getDescendantIndexed(0)->getBranchHistory(1)->getAncestralState();
         //std::cout << "\t" << numOnStates(s1) << "\t" << numOnStates(s0) << "\n";
 
+//        num_attempts--;
+//        if (num_attempts < 0) {
+        
+        return false;
+//        }
+        
         // redraw
-        drawAncestralAreas(p, areaSet);
+//        drawAncestralAreas(p, areaSet);
+        
     }
+    
+    return true;
 }
 
 bool Model::drawChanges(Node* p, std::set<int>& areaSet) {
@@ -1614,15 +1625,24 @@ void Model::updateNode(int mcmcCycle, int na) {
 
     // make new ancestral areas for node p
     //std::cout << "\tdrawareas\n";
-    drawAncestralAreas(p, areaSet);
+//    bool valid_node_sample = drawAncestralAreas(p, areaSet);
+    
+    int num_attempts = 1e2;
+    bool valid_node_sample = false;
+    while (num_attempts >= 0 && valid_node_sample == false) {
+        valid_node_sample = drawAncestralAreas(p, areaSet);
+        num_attempts -= 1;
+    }
+    
 
-
-    // update histories for each branch incident to node p
-    //std::cout << "\taddChanges\n";
-    while(drawChanges(p, areaSet)) h->removeChanges(areaSet);
-    for (std::vector<Node*>::iterator it = descendants.begin(); it != descendants.end(); it++)
-        while(drawChanges(*it, areaSet)) (*it)->getBranchHistory(1)->removeChanges(areaSet);
-
+    if (valid_node_sample) {
+        // update histories for each branch incident to node p
+        //std::cout << "\taddChanges\n";
+        while(drawChanges(p, areaSet)) h->removeChanges(areaSet);
+        for (std::vector<Node*>::iterator it = descendants.begin(); it != descendants.end(); it++)
+            while(drawChanges(*it, areaSet)) (*it)->getBranchHistory(1)->removeChanges(areaSet);
+    }
+    
 /*
  * drawChanges(p, areaSet);
     for (std::vector<Node*>::iterator it = descendants.begin(); it != descendants.end(); it++)
@@ -1678,7 +1698,12 @@ void Model::updateNode(int mcmcCycle, int na) {
 	//lnProposalRatio = calcLnProposalRatio();
 
     double lnR = lnLikelihoodRatio + lnProposalRatio;
-
+    // Reject samples that cannot sample valid histories after a reasonable number of attempts.
+    // This is valid because we could, in theory, have taken the first invalid proposed state
+    // as valid, then let the likelihood function reject the invalid sample (prob=0).
+    if (!valid_node_sample) {
+        lnR = -500;
+    }
 #if DEBUG_PROPOSE_NODE
  //   double slowLnProposalRatio = lnProposedStateProb(0) - lnProposedStateProb(1);
  //   double slowLnL0 = lnLikelihood(0);

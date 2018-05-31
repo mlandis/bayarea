@@ -58,7 +58,7 @@ class Model {
         double                  calcLnProposalRatio(void);
         void                    conditionalLikelhoodDown(void);
         void                    conditionalLikelhoodDown(std::set<int>& areaSet);
-        void                    drawAncestralAreas(Node* p, std::set<int>& areaSet);
+        bool                    drawAncestralAreas(Node* p, std::set<int>& areaSet);
         bool                    drawChanges(Node* p, std::set<int>& areaSet);
         void					drawConsensus(std::set<int>& areaSet);
         void                    inititalizeConditionalLikelihoods(void);

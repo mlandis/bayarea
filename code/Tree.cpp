@@ -285,7 +285,7 @@ void Tree::readNewickFormattedTree(std::string ts, std::vector<std::string>& tax
     if (root->getLen() == 0.0)
         root->setLen( 2 * root->getTime());
     
-    numTaxa = taxonNames.size();
+    numTaxa = (int)taxonNames.size();
 }
 
 void Tree::showAreaProbs(Node* p, int indent, int numSamples) {

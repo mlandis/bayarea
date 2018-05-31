@@ -100,7 +100,7 @@ bool FileMgr::parsePathFileNames(std::string s) {
 	}
 
 	// place to separate filepath from filename
-	int location = s.find_last_of(delimiter);
+	int location = (int)s.find_last_of(delimiter);
 
 	if (location == -1) {
 		// filePath contains no "/", contains no directories

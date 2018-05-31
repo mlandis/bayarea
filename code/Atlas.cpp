@@ -86,9 +86,9 @@ void Atlas::addLayer(std::string fn)
 			data[t].push_back(tokens);
 		}
 	}
-	numLayers = data.size();
-	numAreas = (*data.begin()).second.size();
-	numMetrics = (*data.begin()).second.front().size();
+	numLayers = (int)data.size();
+	numAreas = (int)(*data.begin()).second.size();
+	numMetrics = (int)(*data.begin()).second.front().size();
 
 	std::cout << "\ttime\t(" << timeStart << "," << timeEnd << ")\n";
 	std::cout << "\tnumLayers\t" << numLayers << "\n";

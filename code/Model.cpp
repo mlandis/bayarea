@@ -238,8 +238,6 @@ void Model::conditionalLikelhoodDown(std::set<int>& areaSet) {
 
 bool Model::drawAncestralAreas(Node* p, std::set<int>& areaSet) {
     
-    int num_attempts = 1e2;
-    
     // get the vector of descendants of node p
     std::vector<Node*> descendants = p->getDescendants();
 
@@ -326,19 +324,12 @@ bool Model::drawAncestralAreas(Node* p, std::set<int>& areaSet) {
             }
         }
         s1 = p->getDescendantIndexed(0)->getBranchHistory(1)->getAncestralState();
-        //std::cout << "\t" << numOnStates(s1) << "\t" << numOnStates(s0) << "\n";
 
-//        num_attempts--;
-//        if (num_attempts < 0) {
-        
+        // sample failed
         return false;
-//        }
-        
-        // redraw
-//        drawAncestralAreas(p, areaSet);
-        
     }
     
+    // sample succeeded
     return true;
 }
 
@@ -346,7 +337,7 @@ bool Model::drawChanges(Node* p, std::set<int>& areaSet) {
     
    // std::cout << "start drawChanges\n";
     // get the length of the branch in absolute time
-	double pathRatesSum = pathRates[0] + pathRates[1];
+//	double pathRatesSum = pathRates[0] + pathRates[1];
     double len = p->getLen();
 
 #if DEBUG_DRAW_CHANGES
@@ -382,7 +373,7 @@ bool Model::drawChanges(Node* p, std::set<int>& areaSet) {
         
         // sample the proposed branch history, reject improper histories
         int curState = startState;
-        int sampleCount = 0;
+//        int sampleCount = 0;
         std::vector<double> times;
 
         do
@@ -570,7 +561,8 @@ void Model::drawConsensus(std::set<int>& areaSet) {
 
 	for (int aIdx=0; aIdx<areasPtr->getNumAreas(); aIdx++)
 	{
-		int startState = 0, endState = 0;
+        int startState = 0;
+//        int endState = 0;
 		if (consensusAncestor[aIdx] == true)
 			startState = 1;
 		//if ( p->getDescendantIndexed(0)->getBranchHistory(0)->getAncestralStateForArea(aIdx) == true )
@@ -907,7 +899,7 @@ void Model::initializeHistory(void) {
                 // interior node (besides root)
                 double* clP = p->getConditionalLikelihood()->getCls();
                 double* clA = p->getAncestor()->getConditionalLikelihood()->getCls();
-                double** tiP = p->getTransitionProbability()->getTiProb();
+//                double** tiP = p->getTransitionProbability()->getTiProb();
                 for (int a=0; a<areasPtr->getNumAreas(); a++)
                 {
                     int ancState = 0;
@@ -1027,7 +1019,8 @@ void Model::initializeHistory(void) {
             
             for (int aIdx=0; aIdx<areasPtr->getNumAreas(); aIdx++)
             {
-                int startState = 0, endState = 0;
+                int startState = 0;
+//                int endState = 0;
                 if (consensusAncestor[aIdx] == true)
                     startState = 1;
                 //if ( p->getDescendantIndexed(0)->getBranchHistory(0)->getAncestralStateForArea(aIdx) == true )
@@ -1097,7 +1090,7 @@ double Model::lnLikelihood(int space) {
         std::stringstream debugSs;
 #endif
         double v = 0.0;
-        double dLnL = lnL;
+//        double dLnL = lnL;
         if (p->getAncestor() != NULL)
         {
             //std::cout << "\tNode " << p->getIndex() << "\n";
@@ -1105,7 +1098,7 @@ double Model::lnLikelihood(int space) {
             BranchHistory* h = p->getBranchHistory(space);
             std::set<AreaChange*,comp_history> changes = h->getBranchChanges();
             std::vector<bool> fromState = h->getAncestralState();
-            double sumTransitionRate = 0.0;
+//            double sumTransitionRate = 0.0;
             double waitingTimeSum = 0.0;
             double pos = 0.0;
             double eventTime = 0.0; // for dynamic maps, currently disabled
@@ -1177,7 +1170,7 @@ double Model::lnLikelihoodForPath(Node* p, int space) {
         BranchHistory* h = p->getBranchHistory(space);
         std::set<AreaChange*,comp_history> changes = h->getBranchChanges();
         std::vector<bool> fromState = h->getAncestralState();
-        double sumTransitionRate = 0.0;
+//        double sumTransitionRate = 0.0;
         double waitingTimeSum = 0.0;
         double pos = 0.0;
         double eventTime = 0.0; // for dynamic maps, currently disabled
@@ -1425,7 +1418,7 @@ double Model::sumOfRates(int srModelType, double eventTime, std::vector<double>&
 	// returns the sum of rates away from the current state
 	double r = 0.0;
 	int numOn = numOnStates(x);
-	int numOff = x.size() - numOn;
+	int numOff = (int)x.size() - numOn;
 
 	if (srModelType == INDEPENDENCE || srModelType == DISTANCE_NORM)
 	{
@@ -1990,7 +1983,7 @@ void Model::updateDistancePower(int mcmcCycle, double tuning) {
 
 void Model::updateCarryingPower(int mcmcCycle, double tuning) {
 
-    double oldPathLnL = lnProposedStateProb(0);
+//    double oldPathLnL = lnProposedStateProb(0);
 
     double oldPower = carryingPower;
     carryingPower = oldPower * exp( -tuning*(ranPtr->uniformRv()-0.5) );
@@ -2045,7 +2038,7 @@ void Model::updateCarryingPower(int mcmcCycle, double tuning) {
 
 void Model::updateCarryingCapacity(int mcmcCycle, double tuning) {
 
-    double oldPathLnL = lnProposedStateProb(0);
+//    double oldPathLnL = lnProposedStateProb(0);
 
     double oldCapacity = carryingCapacity;
     carryingCapacity = ranPtr->betaRv(oldCapacity * tuning / (1 - oldCapacity), tuning);

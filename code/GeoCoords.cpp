@@ -106,7 +106,7 @@ void GeoCoords::setTruncateThreshhold(double th)
 void GeoCoords::findOrderedDistanceIdx(double t)
 {
     
-    double minDist = 0;
+//    double minDist = 0;
     orderedDistanceIdx[t].resize(numAreas);
     for (size_t i = 0; i < numAreas; i++)
     {
@@ -122,7 +122,7 @@ void GeoCoords::findOrderedDistanceIdx(double t)
                     break;
             }
             std::vector<int>::iterator it = orderedDistanceIdx[t][i].begin();
-            orderedDistanceIdx[t][i].insert(it + k,j);
+            orderedDistanceIdx[t][i].insert(it + k, (int)j);
         }
     }
 }
